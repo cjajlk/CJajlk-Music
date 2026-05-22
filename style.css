@@ -495,3 +495,20 @@ footer p{
     background:#8b0000;
     transform:translateY(-3px);
 }
+
+/* MUSIC STATUS */
+
+.music-status{
+    margin-top:10px;
+    font-size:0.9rem;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+
+.available{
+    color:#4cff88;
+}
+
+.soon{
+    color:#ff4c4c;
+}
