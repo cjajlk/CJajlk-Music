@@ -431,8 +431,10 @@ footer p{
         margin-top:120px;
         min-height:80vh;
         padding-top:60px;
-        background-size:cover;
-        background-position:center;
+
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center top;
     }
 
     .hero h1{
@@ -449,8 +451,7 @@ footer p{
     }
 
     .hero-image{
-        max-width:300px;
-        margin-bottom:25px;
+        max-width:220px;
     }
 
     .play-icon{
