@@ -256,11 +256,7 @@ body{
 audio{
     width:100%;
     margin-top:20px;
-    filter:invert(1)
-.more-btn:hover{
-    background:#b91c1c;
-    border-color:#b91c1c;
-}}
+}
 
 /* ABOUT */
 
