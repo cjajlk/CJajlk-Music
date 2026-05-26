@@ -204,6 +204,26 @@ body{
     transform:translateX(-50%);
 }
 
+.music-info-banner{
+    background:rgba(185,28,28,0.1);
+    border-left:3px solid #b91c1c;
+    padding:20px 30px;
+    border-radius:8px;
+    margin-bottom:60px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-size:1.1rem;
+    line-height:1.6;
+    color:#e0e0e0;
+}
+
+.music-info-banner strong{
+    color:#b91c1c;
+    font-weight:bold;
+}
+
 .music-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
