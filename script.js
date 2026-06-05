@@ -45,5 +45,39 @@ document.addEventListener('DOMContentLoaded', function() {
         notice.classList.add("hidden");
     });
     
+    // Gestion de la modal album
+    const albumCard = document.getElementById('albumCard');
+    const albumModal = document.getElementById('albumModal');
+    const closeModal = document.querySelector('.close-modal');
+    
+    if (albumCard && albumModal) {
+        albumCard.addEventListener('click', function(e) {
+            e.stopPropagation();
+            albumModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeModal.addEventListener('click', function(e) {
+            e.stopPropagation();
+            albumModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        albumModal.addEventListener('click', function(e) {
+            if (e.target === albumModal) {
+                albumModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Fermer avec la touche Echap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !albumModal.classList.contains('hidden')) {
+                albumModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+    
     console.log('CJajlk Music - Site chargé');
 });
