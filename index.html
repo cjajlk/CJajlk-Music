@@ -88,11 +88,18 @@
             <p>Écoutez les <strong>extraits gratuits</strong> ci-dessous. Pour accéder aux <strong>versions complètes</strong>, cliquez sur <strong>"Écouter & soutenir"</strong> qui vous redirigera vers notre boutique Ko-fi. Retrouvez toutes nos compositions dans la section <strong>Shop / Boutique</strong>. <br><strong>🎵 Prochainement disponible sur Spotify et autres plateformes de streaming.</strong></p>
         </div>
 
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="available">Disponibles</button>
+            <button class="filter-btn" data-filter="soon">Bientôt</button>
+            <button class="filter-btn" data-filter="album">Albums</button>
+        </div>
+
         <div class="music-grid">
 
             <!-- CARTE ALBUM -->
 
-            <div class="music-card album-card" id="albumCard">
+            <div class="music-card album-card filter-album" id="albumCard">
 
                 <img src="assets/album/chapitre_1.png" alt="Chapitre 1">
 
@@ -112,7 +119,7 @@
 
             <!-- CARTE 1 -->
 
-            <div class="music-card">
+            <div class="music-card filter-available">
 
                 <img src="assets/images/petit-a-petit.jpg" alt="Petit à petit">
 
@@ -138,7 +145,7 @@
 
             <!-- CARTE 2 -->
 
-            <div class="music-card">
+            <div class="music-card filter-available">
 
                 <img src="assets/images/le-silence-est-dans-ma-tete.jpg" alt="Le silence est dans ma tête">
 
@@ -164,7 +171,7 @@
 
             <!-- CARTE 3 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/dans_ma_tete_ca_brule.png" alt="Dans ma tête ça brûle">
 
@@ -186,7 +193,7 @@
 
             <!-- CARTE 4 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/notre-famille.jpg" alt="Notre famille">
 
@@ -208,9 +215,9 @@
 
             <!-- CARTE 5 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
-                <img src="assets/images/pour-te-liberer.jpg" alt="Pour te libérer">
+                <img src="assets/images/pour te liberer.png" alt="Pour te libérer">
 
                 <div class="music-info">
 
@@ -220,13 +227,17 @@
 
                     <div class="music-status soon">⏱ Bientôt disponible</div>
 
+                    <audio controls controlsList="nodownload">
+                        <source src="assets/music/pour_te_liberer_extrait.mp4" type="audio/mp4">
+                    </audio>
+
                 </div>
 
             </div>
 
             <!-- CARTE 6 -->
 
-            <div class="music-card">
+            <div class="music-card filter-available">
 
                 <img src="assets/images/fin_mai.png" alt="Fin mai">
 
@@ -252,7 +263,7 @@
 
             <!-- CARTE 7 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/Le_parcours.png" alt="Le parcours">
 
@@ -274,9 +285,9 @@
 
             <!-- CARTE 9 -->
 
-            <div class="music-card">
+            <div class="music-card filter-available">
 
-                <img src="assets/images/l-eternite.jpg" alt="L'éternité">
+                <img src="assets/images/l'eternite.png" alt="L'éternité">
 
                 <div class="music-info">
 
@@ -284,7 +295,15 @@
 
                     <p>Au-delà du temps.</p>
 
-                    <div class="music-status soon">⏱ Bientôt disponible</div>
+                    <div class="music-status available">✓ Disponible sur Ko-fi</div>
+
+                    <audio controls controlsList="nodownload">
+                        <source src="assets/music/l'eternite.mp4" type="audio/mp4">
+                    </audio>
+
+                    <a href="https://ko-fi.com/cjajlk" target="_blank" class="support-btn">
+                        Écouter & soutenir
+                    </a>
 
                 </div>
 
@@ -292,7 +311,7 @@
 
             <!-- CARTE 10 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/Plus_fort_que _tout.png" alt="Plus fort que tout">
 
@@ -314,7 +333,7 @@
 
             <!-- CARTE 11 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/La_route.png" alt="La route">
 
@@ -336,7 +355,7 @@
 
             <!-- CARTE 12 -->
 
-            <div class="music-card">
+            <div class="music-card filter-available">
 
                 <img src="assets/images/ne-pars-pas.jpg" alt="Ne part pas">
 
@@ -362,7 +381,7 @@
 
             <!-- CARTE 13 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/la-gentilesse.jpg" alt="La gentilesse">
 
@@ -384,7 +403,7 @@
 
             <!-- CARTE 14 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/l'hotel.png" alt="L'hôtel">
 
@@ -406,7 +425,7 @@
 
             <!-- CARTE 15 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/11_ans.png" alt="11 ans">
 
@@ -428,7 +447,7 @@
 
             <!-- CARTE 16 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/Hors_critere.png" alt="Hors critère">
 
@@ -450,7 +469,7 @@
 
             <!-- CARTE 17 -->
 
-            <div class="music-card">
+            <div class="music-card filter-soon">
 
                 <img src="assets/images/Ma_confession.png" alt="Ma confession">
 

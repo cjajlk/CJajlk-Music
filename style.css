@@ -224,6 +224,45 @@ body{
     font-weight:bold;
 }
 
+/* FILTRES */
+
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:50px;
+    flex-wrap:wrap;
+}
+
+.filter-btn{
+    padding:12px 28px;
+    background:rgba(185,28,28,0.2);
+    color:white;
+    border:1px solid #b91c1c;
+    border-radius:25px;
+    font-size:0.95rem;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:0.3s ease;
+    font-weight:500;
+}
+
+.filter-btn:hover{
+    background:#b91c1c;
+    box-shadow:0 5px 20px rgba(185,28,28,0.3);
+    transform:translateY(-2px);
+}
+
+.filter-btn.active{
+    background:#b91c1c;
+    color:white;
+    box-shadow:0 5px 20px rgba(185,28,28,0.4);
+}
+
+.music-card.hidden{
+    display:none;
+}
+
 .music-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(400px,1fr));

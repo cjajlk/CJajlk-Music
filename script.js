@@ -2,6 +2,33 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    // ===== FILTRAGE DES CHANSONS =====
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const musicCards = document.querySelectorAll('.music-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Mettre à jour le bouton actif
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Afficher/masquer les cartes
+            musicCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    if (card.classList.contains('filter-' + filterValue)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    });
+    
     // Navigation lisse
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', function(e) {
