@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         notice.classList.add("hidden");
     });
     
-    // Gestion de la modal album
+    // Gestion de la modal album Chapitre 1
     const albumCard = document.getElementById('albumCard');
     const albumModal = document.getElementById('albumModal');
     const closeModal = document.querySelector('.close-modal');
@@ -101,6 +101,40 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && !albumModal.classList.contains('hidden')) {
                 albumModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+    
+    // Gestion de la modal album Macabre
+    const albumCardMacabre = document.getElementById('albumCardMacabre');
+    const albumModalMacabre = document.getElementById('albumModalMacabre');
+    const closeModalMacabre = document.querySelector('.close-modal-macabre');
+    
+    if (albumCardMacabre && albumModalMacabre) {
+        albumCardMacabre.addEventListener('click', function(e) {
+            e.stopPropagation();
+            albumModalMacabre.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeModalMacabre.addEventListener('click', function(e) {
+            e.stopPropagation();
+            albumModalMacabre.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        albumModalMacabre.addEventListener('click', function(e) {
+            if (e.target === albumModalMacabre) {
+                albumModalMacabre.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Fermer avec la touche Echap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !albumModalMacabre.classList.contains('hidden')) {
+                albumModalMacabre.classList.add('hidden');
                 document.body.style.overflow = 'auto';
             }
         });
