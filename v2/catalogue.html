@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJajlk Music — Catalogue</title>
+  <meta name="description" content="Catalogue musical de CJajlk Music. Recherchez et filtrez les titres disponibles, à venir et achetables.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CJajlk Music — Catalogue">
+  <meta property="og:description" content="Catalogue musical de CJajlk Music. Recherchez et filtrez les titres disponibles, à venir et achetables.">
+  <meta property="og:url" content="https://example.com/catalogue.html">
+  <link rel="canonical" href="https://example.com/catalogue.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="catalogue-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-white">CJAJLK</span> <span class="brand-red">MUSIC</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a class="active" href="catalogue.html">Catalogue</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="catalogue-page container">
+    <section class="catalogue-intro">
+      <div class="section-header">
+        <p class="section-pretitle">Catalogue</p>
+        <h1>Explorez les titres</h1>
+      </div>
+      <p class="catalogue-text">Recherchez par titre, artiste, projet, album ou thème. Filtrez seulement les titres disponibles, à venir ou achetables.</p>
+    </section>
+
+    <section class="catalogue-filters">
+      <div class="filter-row">
+        <input type="search" id="searchInput" placeholder="Rechercher un titre, un artiste, un thème..." aria-label="Recherche">
+        <button id="resetFilters" class="btn btn-secondary">Réinitialiser</button>
+      </div>
+      <div class="filter-grid">
+        <div class="filter-group">
+          <label for="filterArtist">Artiste</label>
+          <select id="filterArtist" aria-label="Filtrer par artiste"></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterStatus">Statut</label>
+          <select id="filterStatus" aria-label="Filtrer par statut"></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterTheme">Thème</label>
+          <select id="filterTheme" aria-label="Filtrer par thème"></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterYear">Année</label>
+          <select id="filterYear" aria-label="Filtrer par année"></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterPurchasable">Achetables</label>
+          <select id="filterPurchasable" aria-label="Filtrer par achetable"></select>
+        </div>
+        <div class="filter-group">
+          <label for="sortOrder">Trier</label>
+          <select id="sortOrder" aria-label="Trier les résultats"></select>
+        </div>
+      </div>
+      <div class="catalogue-meta">
+        <span id="resultCount" aria-live="polite">0 titres trouvés</span>
+      </div>
+    </section>
+
+    <section class="catalogue-list" id="catalogueCards"></section>
+    <div class="show-more-container">
+      <button id="showMore" class="btn btn-primary">Afficher plus</button>
+    </div>
+    <div id="noResults" class="no-results hidden">Aucun titre trouvé. Essayez une autre recherche ou filtre.</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>CJajlk Music © 2026</p>
+        <p>Contact : <a href="mailto:cjajlk@gmail.com">cjajlk@gmail.com</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.tiktok.com/@cjajlk94" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="https://www.youtube.com/@studiocj13" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="https://ko-fi.com/cjajlk" target="_blank" rel="noreferrer">Ko-fi</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/catalogue.js"></script>
+</body>
+</html>
