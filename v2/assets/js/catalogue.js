@@ -31,6 +31,7 @@ function trackMatches(track, query) {
   const searchFields = [
     track.title,
     track.artist,
+    track.performer,
     track.album,
     track.project,
     ...(track.themes || []),

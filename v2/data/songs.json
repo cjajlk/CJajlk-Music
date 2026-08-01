@@ -8,8 +8,15 @@
     "performer": null,
     "project": "Chapitre 1",
     "album": "Chapitre 1",
-    "themes": ["reconstruction", "espoir"],
-    "keywords": ["introspection", "coeur", "Ko-fi"],
+    "themes": [
+      "reconstruction",
+      "espoir"
+    ],
+    "keywords": [
+      "introspection",
+      "coeur",
+      "Ko-fi"
+    ],
     "descriptionShort": "Reconstruction intérieure en version extrait.",
     "descriptionLong": "Un titre intime qui décrit le cheminement vers la reconstruction, entre ombre et lumière. Extrait proposé pour découvrir l'univers émotionnel de CJajlk Music.",
     "releaseDate": null,
@@ -20,7 +27,10 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Petit à petit",
-    "formats": ["extrait audio 30-45s", "version complète sur Ko-fi"],
+    "formats": [
+      "extrait audio 30-45s",
+      "version complète sur Ko-fi"
+    ],
     "cover": "assets/images/covers/petit-a-petit.jpg",
     "audioPreview": "assets/audio/previews/petit-a-petit-preview.mp4",
     "previewDuration": 45,
@@ -34,7 +44,10 @@
       "tiktok": null
     },
     "kofiUrl": "https://ko-fi.com/cjajlk",
-    "similarTracks": ["le-silence-dans-ma-tete", "ne-pars-pas"],
+    "similarTracks": [
+      "le-silence-dans-ma-tete",
+      "ne-pars-pas"
+    ],
     "seoTitle": "Petit à petit — CJajlk Music",
     "seoDescription": "Écoutez l'extrait de 'Petit à petit', une composition intime de CJajlk Music. Disponible sur Ko-fi.",
     "ogImage": "assets/images/covers/petit-a-petit.jpg"
@@ -48,8 +61,15 @@
     "performer": null,
     "project": null,
     "album": null,
-    "themes": ["émotion", "tension"],
-    "keywords": ["bientot", "passion", "intensité"],
+    "themes": [
+      "émotion",
+      "tension"
+    ],
+    "keywords": [
+      "bientot",
+      "passion",
+      "intensité"
+    ],
     "descriptionShort": "Un extrait puissant et brûlant.",
     "descriptionLong": "Un voyage sonore où l'émotion brûlante se mêle à la fragilité. Ce titre bientôt disponible explore une intensité intérieure profonde.",
     "releaseDate": null,
@@ -60,7 +80,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Dans ma tête ça brûle",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/dans-ma-tete-ca-brule.png",
     "audioPreview": "assets/audio/previews/dans-ma-tete-ca-brule-preview.mp4",
     "previewDuration": 45,
@@ -74,7 +96,10 @@
       "tiktok": null
     },
     "kofiUrl": null,
-    "similarTracks": ["notre-famille", "hors-critere"],
+    "similarTracks": [
+      "notre-famille",
+      "hors-critere"
+    ],
     "seoTitle": "Dans ma tête ça brûle — CJajlk Music",
     "seoDescription": "Découvrez l'extrait puissant de 'Dans ma tête ça brûle' par CJajlk Music. Bientôt disponible.",
     "ogImage": "assets/images/covers/dans-ma-tete-ca-brule.png"
@@ -100,7 +125,10 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Le silence dans ma tête",
-    "formats": ["extrait audio 30-45s", "version complète sur Ko-fi"],
+    "formats": [
+      "extrait audio 30-45s",
+      "version complète sur Ko-fi"
+    ],
     "cover": "assets/images/covers/le-silence-dans-ma-tete.jpg",
     "audioPreview": "assets/audio/previews/le-silence-dans-ma-tete-preview.mp4",
     "previewDuration": null,
@@ -127,8 +155,15 @@
     "performer": "CJajlk’s Wife",
     "project": null,
     "album": null,
-    "themes": ["amour", "attachement"],
-    "keywords": ["coeur", "souvenir", "Ko-fi"],
+    "themes": [
+      "amour",
+      "attachement"
+    ],
+    "keywords": [
+      "coeur",
+      "souvenir",
+      "Ko-fi"
+    ],
     "descriptionShort": "Un cri du cœur disponible sur Ko-fi.",
     "descriptionLong": "Un extrait poignant qui parle de l'attachement et du désir de rester. Ce morceau est proposé en version courte avec lien de soutien sur Ko-fi.",
     "releaseDate": null,
@@ -139,7 +174,10 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Ne pars pas",
-    "formats": ["extrait audio 30-45s", "demande de version complète"],
+    "formats": [
+      "extrait audio 30-45s",
+      "demande de version complète"
+    ],
     "cover": "assets/images/covers/ne-pars-pas.jpg",
     "audioPreview": "assets/audio/previews/ne-pars-pas-preview.mp4",
     "previewDuration": 45,
@@ -153,7 +191,10 @@
       "tiktok": null
     },
     "kofiUrl": "https://ko-fi.com/cjajlk",
-    "similarTracks": ["petit-a-petit", "la-gentilesse"],
+    "similarTracks": [
+      "petit-a-petit",
+      "la-gentilesse"
+    ],
     "seoTitle": "Ne pars pas — CJajlk Music",
     "seoDescription": "Écoutez l'extrait de 'Ne pars pas' par CJajlk Music. Disponible sur Ko-fi pour soutien et achat.",
     "ogImage": "assets/images/covers/ne-pars-pas.jpg"
@@ -179,7 +220,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Notre famille",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/notre-famille.jpg",
     "audioPreview": "assets/audio/previews/notre-famille-preview.mp4",
     "previewDuration": null,
@@ -218,7 +261,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Pour te libérer",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/pour-te-liberer.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -258,7 +303,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Plus fort que tout",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/plus-fort-que-tout.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -298,7 +345,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — L’hôtel",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/l-hotel.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -338,7 +387,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — L’éternité",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/l-eternite.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -378,7 +429,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Le parcours",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/le-parcours.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -406,8 +459,15 @@
     "performer": "CJajlk",
     "project": null,
     "album": null,
-    "themes": ["tension", "observation"],
-    "keywords": ["prédateurs", "danger", "psyché"],
+    "themes": [
+      "tension",
+      "observation"
+    ],
+    "keywords": [
+      "prédateurs",
+      "danger",
+      "psyché"
+    ],
     "descriptionShort": null,
     "descriptionLong": "Une plongée intense dans la traque et le mystère, portée par une ambiance dramatique et des images sonores visuelles.",
     "releaseDate": null,
@@ -418,7 +478,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Prédateurs",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/predateurs.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -446,8 +508,15 @@
     "performer": null,
     "project": null,
     "album": null,
-    "themes": ["douceur", "attente"],
-    "keywords": ["gentillesse", "tendresse", "bientôt"],
+    "themes": [
+      "douceur",
+      "attente"
+    ],
+    "keywords": [
+      "gentillesse",
+      "tendresse",
+      "bientôt"
+    ],
     "descriptionShort": "La douceur du cœur.",
     "descriptionLong": "Un extrait délicat qui explore la bienveillance et l'espoir, porté par une atmosphère apaisante.",
     "releaseDate": null,
@@ -458,7 +527,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — La gentilesse",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/la-gentilesse.jpg",
     "audioPreview": null,
     "previewDuration": null,
@@ -486,8 +557,15 @@
     "performer": null,
     "project": null,
     "album": null,
-    "themes": ["souvenirs", "croissance"],
-    "keywords": ["dix ans", "enfance", "maturité"],
+    "themes": [
+      "souvenirs",
+      "croissance"
+    ],
+    "keywords": [
+      "dix ans",
+      "enfance",
+      "maturité"
+    ],
     "descriptionShort": "Une décennie de souvenirs.",
     "descriptionLong": "Une évocation émotive d'années passées, entre nostalgie et promesse d'avenir.",
     "releaseDate": null,
@@ -498,7 +576,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — 11 ans",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/11-ans.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -526,8 +606,15 @@
     "performer": null,
     "project": null,
     "album": null,
-    "themes": ["singularité", "transgression"],
-    "keywords": ["hors norme", "originalité", "singulier"],
+    "themes": [
+      "singularité",
+      "transgression"
+    ],
+    "keywords": [
+      "hors norme",
+      "originalité",
+      "singulier"
+    ],
     "descriptionShort": "Une chanson unique et singulière.",
     "descriptionLong": "Un extrait audacieux qui célèbre l’écart aux normes et l’unicité expressive.",
     "releaseDate": null,
@@ -538,7 +625,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Hors critère",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/hors-critere.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -566,8 +655,15 @@
     "performer": null,
     "project": null,
     "album": null,
-    "themes": ["aveu", "intimité"],
-    "keywords": ["confession", "vérité", "sincérité"],
+    "themes": [
+      "aveu",
+      "intimité"
+    ],
+    "keywords": [
+      "confession",
+      "vérité",
+      "sincérité"
+    ],
     "descriptionShort": "Un aveu sincère et profond.",
     "descriptionLong": null,
     "releaseDate": null,
@@ -578,7 +674,9 @@
     "price": null,
     "currency": null,
     "purchaseEmailSubject": "Demande d’achat — Ma confession",
-    "formats": ["extrait audio 30-45s"],
+    "formats": [
+      "extrait audio 30-45s"
+    ],
     "cover": "assets/images/covers/ma-confession.png",
     "audioPreview": null,
     "previewDuration": null,
@@ -596,5 +694,267 @@
     "seoTitle": "Ma confession — CJajlk Music",
     "seoDescription": "Découvrez l'extrait de 'Ma confession' de CJajlk Music. Bientôt disponible.",
     "ogImage": "assets/images/covers/ma-confession.png"
+  },
+  {
+    "id": "fin-mai",
+    "slug": "fin-mai",
+    "title": "Fin mai",
+    "artist": null,
+    "author": null,
+    "performer": null,
+    "project": null,
+    "album": null,
+    "themes": [
+      "changement",
+      "saison"
+    ],
+    "keywords": [
+      "mai",
+      "printemps",
+      "renouveau"
+    ],
+    "descriptionShort": "Une saison de changements.",
+    "descriptionLong": "Un extrait lumineux qui raconte le passage du printemps à un nouvel âge, porté par des émotions fragiles et sincères.",
+    "releaseDate": null,
+    "releaseYear": 2026,
+    "status": "available",
+    "featured": false,
+    "purchasable": true,
+    "price": null,
+    "currency": null,
+    "purchaseEmailSubject": "Demande d’achat — Fin mai",
+    "formats": [
+      "extrait audio 30-45s",
+      "version complète sur Ko-fi"
+    ],
+    "cover": "assets/images/covers/fin-mai.png",
+    "audioPreview": null,
+    "previewDuration": null,
+    "platforms": {
+      "youtube": null,
+      "youtubeMusic": null,
+      "spotify": null,
+      "deezer": null,
+      "appleMusic": null,
+      "amazonMusic": null,
+      "tiktok": null
+    },
+    "kofiUrl": "https://ko-fi.com/cjajlk",
+    "similarTracks": [
+      "la-gentilesse",
+      "petit-a-petit"
+    ],
+    "seoTitle": "Fin mai — CJajlk Music",
+    "seoDescription": "Écoutez l'extrait de 'Fin mai' de CJajlk Music. Disponible sur Ko-fi.",
+    "ogImage": "assets/images/covers/fin-mai.png"
+  },
+  {
+    "id": "la-route",
+    "slug": "la-route",
+    "title": "La route",
+    "artist": null,
+    "author": null,
+    "performer": null,
+    "project": null,
+    "album": null,
+    "themes": [
+      "voyage",
+      "errance"
+    ],
+    "keywords": [
+      "route",
+      "déplacement",
+      "mouvement"
+    ],
+    "descriptionShort": "Un voyage sans fin.",
+    "descriptionLong": "Un extrait qui accompagne une route incertaine, entre paysages intérieurs et pulsions de liberté.",
+    "releaseDate": null,
+    "releaseYear": null,
+    "status": "coming-soon",
+    "featured": false,
+    "purchasable": false,
+    "price": null,
+    "currency": null,
+    "purchaseEmailSubject": "Demande d’achat — La route",
+    "formats": [
+      "extrait audio 30-45s"
+    ],
+    "cover": "assets/images/covers/la-route.png",
+    "audioPreview": null,
+    "previewDuration": null,
+    "platforms": {
+      "youtube": null,
+      "youtubeMusic": null,
+      "spotify": null,
+      "deezer": null,
+      "appleMusic": null,
+      "amazonMusic": null,
+      "tiktok": null
+    },
+    "kofiUrl": null,
+    "similarTracks": [
+      "pour-te-liberer",
+      "le-parcours"
+    ],
+    "seoTitle": "La route — CJajlk Music",
+    "seoDescription": "Découvrez l'extrait de 'La route' par CJajlk Music. Bientôt disponible.",
+    "ogImage": "assets/images/covers/la-route.png"
+  },
+  {
+    "id": "sensualite",
+    "slug": "sensualite",
+    "title": "Sensualité",
+    "artist": null,
+    "author": null,
+    "performer": null,
+    "project": null,
+    "album": null,
+    "themes": [
+      "passion",
+      "séduction"
+    ],
+    "keywords": [
+      "sensualité",
+      "émotion",
+      "chaleur"
+    ],
+    "descriptionShort": "Sensualité et passion.",
+    "descriptionLong": "Un extrait vibrant qui mêle passion et désir, porté par des nuances chaudes et envoûtantes.",
+    "releaseDate": null,
+    "releaseYear": 2026,
+    "status": "available",
+    "featured": false,
+    "purchasable": true,
+    "price": null,
+    "currency": null,
+    "purchaseEmailSubject": "Demande d’achat — Sensualité",
+    "formats": [
+      "extrait audio 30-45s",
+      "version complète sur Ko-fi"
+    ],
+    "cover": "assets/images/covers/sensualite.png",
+    "audioPreview": null,
+    "previewDuration": null,
+    "platforms": {
+      "youtube": null,
+      "youtubeMusic": null,
+      "spotify": null,
+      "deezer": null,
+      "appleMusic": null,
+      "amazonMusic": null,
+      "tiktok": null
+    },
+    "kofiUrl": "https://ko-fi.com/cjajlk",
+    "similarTracks": [
+      "la-gentilesse",
+      "ma-confession"
+    ],
+    "seoTitle": "Sensualité — CJajlk Music",
+    "seoDescription": "Écoutez l'extrait de 'Sensualité' de CJajlk Music. Disponible sur Ko-fi.",
+    "ogImage": "assets/images/covers/sensualite.png"
+  },
+  {
+    "id": "la-mort",
+    "slug": "la-mort",
+    "title": "La mort",
+    "artist": null,
+    "author": null,
+    "performer": null,
+    "project": null,
+    "album": "Macabre",
+    "themes": [
+      "obscurité",
+      "mystère"
+    ],
+    "keywords": [
+      "mort",
+      "voyage",
+      "ombre"
+    ],
+    "descriptionShort": "Un voyage dans l'obscurité.",
+    "descriptionLong": "Un extrait sombre et profond qui explore le passage vers l’inconnu et les émotions qui l'accompagnent.",
+    "releaseDate": null,
+    "releaseYear": null,
+    "status": "coming-soon",
+    "featured": false,
+    "purchasable": false,
+    "price": null,
+    "currency": null,
+    "purchaseEmailSubject": "Demande d’achat — La mort",
+    "formats": [
+      "extrait audio 30-45s"
+    ],
+    "cover": "assets/images/covers/la-mort.png",
+    "audioPreview": null,
+    "previewDuration": null,
+    "platforms": {
+      "youtube": null,
+      "youtubeMusic": null,
+      "spotify": null,
+      "deezer": null,
+      "appleMusic": null,
+      "amazonMusic": null,
+      "tiktok": null
+    },
+    "kofiUrl": null,
+    "similarTracks": [
+      "le-cimetiere",
+      "hors-critere"
+    ],
+    "seoTitle": "La mort — CJajlk Music",
+    "seoDescription": "Découvrez l'extrait de 'La mort' par CJajlk Music. Bientôt disponible.",
+    "ogImage": "assets/images/covers/la-mort.png"
+  },
+  {
+    "id": "le-cimetiere",
+    "slug": "le-cimetiere",
+    "title": "Le cimetière",
+    "artist": null,
+    "author": null,
+    "performer": null,
+    "project": null,
+    "album": "Macabre",
+    "themes": [
+      "repos",
+      "éternité"
+    ],
+    "keywords": [
+      "cimetière",
+      "silence",
+      "repos"
+    ],
+    "descriptionShort": "Un repos éternel.",
+    "descriptionLong": "Un extrait mélancolique qui évoque la quiétude et les secrets gardés par un lieu de repos.",
+    "releaseDate": null,
+    "releaseYear": null,
+    "status": "coming-soon",
+    "featured": false,
+    "purchasable": false,
+    "price": null,
+    "currency": null,
+    "purchaseEmailSubject": "Demande d’achat — Le cimetière",
+    "formats": [
+      "extrait audio 30-45s"
+    ],
+    "cover": "assets/images/covers/le-cimetiere.png",
+    "audioPreview": null,
+    "previewDuration": null,
+    "platforms": {
+      "youtube": null,
+      "youtubeMusic": null,
+      "spotify": null,
+      "deezer": null,
+      "appleMusic": null,
+      "amazonMusic": null,
+      "tiktok": null
+    },
+    "kofiUrl": null,
+    "similarTracks": [
+      "la-mort",
+      "l-eternite"
+    ],
+    "seoTitle": "Le cimetière — CJajlk Music",
+    "seoDescription": "Découvrez l'extrait de 'Le cimetière' par CJajlk Music. Bientôt disponible.",
+    "ogImage": "assets/images/covers/le-cimetiere.png"
   }
 ]
