@@ -188,6 +188,7 @@ function initPreviewButtons() {
     }
 
     const previewSrc = button.dataset.preview;
+    const previewUrl = new URL(previewSrc, location.href).href;
     const duration = Number(button.dataset.duration) || 45;
     previewDuration = duration;
 
@@ -231,6 +232,9 @@ function initPreviewButtons() {
       });
     }
 
+    const isSameTrack = audioPreviewPlayer.currentSrc === previewUrl;
+    const isPlaying = !audioPreviewPlayer.paused;
+
     if (activeButton && activeButton !== button) {
       if (!audioPreviewPlayer.paused) {
         audioPreviewPlayer.pause();
@@ -241,12 +245,18 @@ function initPreviewButtons() {
 
     activeButton = button;
 
-    if (audioPreviewPlayer.src !== previewSrc) {
+    if (!isSameTrack) {
       audioPreviewPlayer.src = previewSrc;
       audioPreviewPlayer.currentTime = 0;
+      audioPreviewPlayer.play().then(() => {
+        button.textContent = 'Pause';
+      }).catch(() => {
+        button.textContent = 'Erreur de lecture';
+      });
+      return;
     }
 
-    if (!audioPreviewPlayer.paused && audioPreviewPlayer.src === previewSrc) {
+    if (isPlaying) {
       audioPreviewPlayer.pause();
       button.textContent = 'Écouter l’extrait';
       return;
