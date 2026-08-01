@@ -117,6 +117,7 @@ function renderTrackCard(track) {
   }
   const subtitleText = subtitleParts.length > 0 ? subtitleParts.join(' · ') : '';
 
+  const descriptionText = track.descriptionShort ? escapeHtml(track.descriptionShort) : '';
   return `
     <article class="card catalogue-card" id="${escapeHtml(track.slug)}">
       <div class="card-cover">
@@ -125,7 +126,7 @@ function renderTrackCard(track) {
       <div class="card-content">
         <h3>${escapeHtml(track.title)}</h3>
         ${subtitleText ? `<p class="track-subtitle">${escapeHtml(subtitleText)}</p>` : ''}
-        <p>${escapeHtml(track.descriptionShort || '')}</p>
+        ${descriptionText ? `<p>${descriptionText}</p>` : ''}
         <div class="card-meta">
           <span class="badge ${statusClass}">${statusLabel}</span>
           <span class="badge">${escapeHtml(track.releaseYear || '—')}</span>
