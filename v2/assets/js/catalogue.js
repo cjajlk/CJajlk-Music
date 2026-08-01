@@ -100,12 +100,22 @@ function renderTrackCard(track) {
   const purchasableLabel = track.purchasable ? 'Achetables' : 'Non achetables';
 
   const previewButton = track.audioPreview
-    ? `<button type="button" class="btn btn-tertiary preview-button" data-preview="${escapeHtml(track.audioPreview)}">Écouter l’extrait</button>`
+    ? `<button type="button" class="btn btn-tertiary preview-button" data-preview="${escapeHtml(track.audioPreview)}" data-duration="${escapeHtml(String(track.previewDuration != null ? track.previewDuration : 45))}">Écouter l’extrait</button>`
     : `<span class="preview-unavailable">Extrait momentanément indisponible</span>`;
 
   const kofiButton = track.kofiUrl
     ? `<a href="${escapeHtml(track.kofiUrl)}" class="btn btn-primary" target="_blank" rel="noreferrer">Ko-fi</a>`
     : `<span class="btn btn-secondary disabled" aria-disabled="true">Pas de Ko-fi</span>`;
+
+  const subtitleParts = [];
+  if (track.artist) {
+    subtitleParts.push(track.artist);
+  }
+  const projectOrAlbum = track.project || track.album;
+  if (projectOrAlbum) {
+    subtitleParts.push(projectOrAlbum);
+  }
+  const subtitleText = subtitleParts.length > 0 ? subtitleParts.join(' · ') : '';
 
   return `
     <article class="card catalogue-card" id="${escapeHtml(track.slug)}">
@@ -114,7 +124,7 @@ function renderTrackCard(track) {
       </div>
       <div class="card-content">
         <h3>${escapeHtml(track.title)}</h3>
-        <p class="track-subtitle">${escapeHtml(track.artist || '')} · ${escapeHtml(track.project || track.album || 'Single')}</p>
+        ${subtitleText ? `<p class="track-subtitle">${escapeHtml(subtitleText)}</p>` : ''}
         <p>${escapeHtml(track.descriptionShort || '')}</p>
         <div class="card-meta">
           <span class="badge ${statusClass}">${statusLabel}</span>
@@ -122,7 +132,7 @@ function renderTrackCard(track) {
           <span class="badge">${escapeHtml(purchasableLabel)}</span>
         </div>
         <div class="card-actions">
-          <a href="catalogue.html#${escapeHtml(track.slug)}" class="btn btn-secondary">Voir</a>
+          <button type="button" class="btn btn-secondary disabled" aria-disabled="true">Fiche bientôt disponible</button>
           ${previewButton}
           ${kofiButton}
         </div>
@@ -166,6 +176,9 @@ function handleShowMore() {
 
 function initPreviewButtons() {
   const catalogueCards = document.getElementById('catalogueCards');
+  let previewDuration = 45;
+  let activeButton = null;
+
   catalogueCards.addEventListener('click', event => {
     const button = event.target.closest('.preview-button');
     if (!button) {
@@ -173,20 +186,75 @@ function initPreviewButtons() {
     }
 
     const previewSrc = button.dataset.preview;
+    const duration = Number(button.dataset.duration) || 45;
+    previewDuration = duration;
+
     if (!previewSrc) {
       return;
     }
 
     if (!audioPreviewPlayer) {
       audioPreviewPlayer = document.createElement('audio');
-      audioPreviewPlayer.controls = true;
       audioPreviewPlayer.preload = 'none';
+      audioPreviewPlayer.controls = false;
       audioPreviewPlayer.className = 'audio-preview-player';
       document.body.appendChild(audioPreviewPlayer);
+
+      audioPreviewPlayer.addEventListener('playing', () => {
+        if (activeButton) {
+          activeButton.textContent = 'Pause';
+        }
+      });
+
+      audioPreviewPlayer.addEventListener('pause', () => {
+        if (activeButton) {
+          activeButton.textContent = 'Écouter l’extrait';
+        }
+      });
+
+      audioPreviewPlayer.addEventListener('timeupdate', () => {
+        if (audioPreviewPlayer.currentTime >= previewDuration) {
+          audioPreviewPlayer.pause();
+          audioPreviewPlayer.currentTime = 0;
+          if (activeButton) {
+            activeButton.textContent = 'Écouter l’extrait';
+          }
+        }
+      });
+
+      audioPreviewPlayer.addEventListener('ended', () => {
+        if (activeButton) {
+          activeButton.textContent = 'Écouter l’extrait';
+        }
+      });
     }
 
-    audioPreviewPlayer.src = previewSrc;
-    audioPreviewPlayer.play().catch(() => {});
+    if (activeButton && activeButton !== button) {
+      if (!audioPreviewPlayer.paused) {
+        audioPreviewPlayer.pause();
+      }
+      audioPreviewPlayer.currentTime = 0;
+      activeButton.textContent = 'Écouter l’extrait';
+    }
+
+    activeButton = button;
+
+    if (audioPreviewPlayer.src !== previewSrc) {
+      audioPreviewPlayer.src = previewSrc;
+      audioPreviewPlayer.currentTime = 0;
+    }
+
+    if (!audioPreviewPlayer.paused && audioPreviewPlayer.src === previewSrc) {
+      audioPreviewPlayer.pause();
+      button.textContent = 'Écouter l’extrait';
+      return;
+    }
+
+    audioPreviewPlayer.play().then(() => {
+      button.textContent = 'Pause';
+    }).catch(() => {
+      button.textContent = 'Erreur de lecture';
+    });
   });
 }
 
@@ -198,7 +266,7 @@ function populateFilters(tracks) {
   const purchasableSelect = document.getElementById('filterPurchasable');
   const sortSelect = document.getElementById('sortOrder');
 
-  const artists = [...new Set(tracks.map(track => track.artist).filter(Boolean))].sort();
+  const artists = [...new Set(tracks.map(track => track.artist).filter(artist => artist && artist !== 'CJajlk Music'))].sort();
   const themes = [...new Set(tracks.flatMap(track => track.themes || []).filter(Boolean))].sort();
   const years = [...new Set(tracks.map(track => track.releaseYear).filter(Boolean))].sort((a, b) => b - a);
 
