@@ -158,7 +158,7 @@ function initContact() {
 
         const subject = `Demande d’achat — ${currentTrack.title}`;
         const body = `Bonjour,\r\n\r\nJe souhaite obtenir des informations sur l'achat du titre : ${currentTrack.title}.\r\n\r\nMerci.\r\n`;
-        const mailto = `mailto:cjajlk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailto = `mailto:cjajlk78@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailto;
       });
 
@@ -176,7 +176,7 @@ function initContact() {
 
           const subject = `Avis à valider — ${selectedTrack.title}`;
           const body = `Titre : ${selectedTrack.title}\r\nPseudonyme : ${reviewNickname.value.trim()}\r\nNote : ${reviewRating.value}/5\r\nCommentaire : ${reviewComment.value.trim()}\r\n\r\nVotre avis sera vérifié avant publication.`;
-          const mailto = `mailto:cjajlk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          const mailto = `mailto:cjajlk78@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
           window.location.href = mailto;
         });
       }
