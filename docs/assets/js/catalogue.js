@@ -106,7 +106,7 @@ function renderTrackCard(track) {
 
   const kofiButton = track.kofiUrl
     ? `<a href="${escapeHtml(track.kofiUrl)}" class="btn btn-primary" target="_blank" rel="noreferrer">Ko-fi</a>`
-    : `<span class="btn btn-secondary disabled" aria-disabled="true">Pas de Ko-fi</span>`;
+    : '';
 
   const subtitleParts = [];
   if (track.artist) {
@@ -134,7 +134,7 @@ function renderTrackCard(track) {
           <span class="badge">${escapeHtml(purchasableLabel)}</span>
         </div>
         <div class="card-actions">
-          <button type="button" class="btn btn-secondary disabled" aria-disabled="true">Fiche bientôt disponible</button>
+          <a href="titres/${escapeHtml(track.slug)}/" class="btn btn-secondary">Découvrir le titre</a>
           ${previewButton}
           ${kofiButton}
         </div>

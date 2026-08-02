@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cjajlk.github.io/CJajlk-Music/sitemap.xml

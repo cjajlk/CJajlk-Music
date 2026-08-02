@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'hôtel "” CJajlk Music</title>
+  <meta name="description" content="Découvrez l&#39;extrait &#39;L'hôtel&#39; de CJajlk Music. Bientôt disponible.">
+  <link rel="canonical" href="https://cjajlk.github.io/CJajlk-Music/titres/l-hotel/">
+  <meta property="og:type" content="music.song">
+  <meta property="og:title" content="L'hôtel "” CJajlk Music">
+  <meta property="og:description" content="Découvrez l&#39;extrait &#39;L'hôtel&#39; de CJajlk Music. Bientôt disponible.">
+  <meta property="og:image" content="assets/images/covers/l-hotel.png">
+  <meta property="og:url" content="https://cjajlk.github.io/CJajlk-Music/titres/l-hotel/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+        "genre":  [
+
+              ],
+    "description":  "Un refuge temporaire.",
+    "@type":  "MusicRecording",
+    "url":  "https://cjajlk.github.io/CJajlk-Music/titres/l-hotel/",
+    "@context":  "https://schema.org",
+    "name":  "L'hôtel",
+    "byArtist":  {
+                     "name":  "CJajlk Music",
+                     "@type":  "MusicGroup"
+                 },
+    "image":  "assets/images/covers/l-hotel.png"
+}
+  </script>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../index.html"><span class="brand-white">CJAJLK</span> <span class="brand-red">MUSIC</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="site-nav">
+        <a href="../../index.html">Accueil</a>
+        <a href="../../catalogue.html">Catalogue</a>
+        <a href="../../about.html">À propos</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="track-page container">
+    <nav class="breadcrumb">
+      <a href="../../index.html">Accueil</a>
+      <span>›</span>
+      <a href="../../catalogue.html">Catalogue</a>
+      <span>›</span>
+      <span>L'hôtel</span>
+    </nav>
+    <section class="track-hero">
+      <div class="track-cover-wrapper">
+        <img src="../../assets/images/covers/l-hotel.png" alt="L'hôtel" class="track-cover">
+      </div>
+      <div class="track-details">
+        <span class="track-status">À venir</span>
+        <h1>L'hôtel</h1>
+        
+        
+        <ul class="track-meta-list">
+          
+        </ul>
+      </div>
+    </section>
+    <section class="track-description">
+      <p>Un refuge temporaire.</p>
+    </section>
+    <section class="track-audio">
+      <p class="audio-unavailable">Extrait momentanément indisponible</p>
+    </section>
+    <section class="track-platforms">
+      
+    </section>
+    <section class="track-review-form">
+      <h2>Laisser un avis</h2>
+      <p>Votre avis sera vérifié avant publication.</p>
+      <form id="trackReviewForm">
+        <label for="reviewNickname">Pseudonyme</label>
+        <input id="reviewNickname" name="nickname" type="text" required>
+        <label for="reviewRating">Note</label>
+        <select id="reviewRating" name="rating" required>
+          <option value="">Sélectionnez une note</option>
+          <option value="5">5/5</option>
+          <option value="4">4/5</option>
+          <option value="3">3/5</option>
+          <option value="2">2/5</option>
+          <option value="1">1/5</option>
+        </select>
+        <label for="reviewComment">Commentaire</label>
+        <textarea id="reviewComment" name="comment" rows="4" required></textarea>
+        <button type="button" id="sendReviewEmail" class="btn btn-primary">Préparer l'e-mail</button>
+      </form>
+    </section>
+    <div class="track-actions">
+      <a href="../../catalogue.html" class="btn btn-secondary">Retour au catalogue</a>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>CJajlk Music © 2026</p>
+        <p>Contact : <a href="mailto:cjajlk@gmail.com">cjajlk@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('sendReviewEmail').addEventListener('click', () => {
+      const title = 'L'hôtel';
+      const nickname = document.getElementById('reviewNickname').value.trim();
+      const rating = document.getElementById('reviewRating').value;
+      const comment = document.getElementById('reviewComment').value.trim();
+      if (!nickname || !rating || !comment) {
+        alert('Merci de renseigner votre pseudonyme, votre note et votre commentaire.');
+        return;
+      }
+      const subject = `Avis Ã  valider "” ${title}`;
+      const body = `Titre : ${title}\r\nPseudonyme : ${nickname}\r\nNote : ${rating}/5\r\nCommentaire : ${comment}\r\n\r\nVotre avis sera vérifié avant publication.`;
+      window.location.href = `mailto:cjajlk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>

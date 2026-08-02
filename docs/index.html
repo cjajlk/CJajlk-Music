@@ -8,8 +8,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="CJajlk Music — Accueil">
   <meta property="og:description" content="CJajlk Music, univers musical sombre et cinématographique. Découvrez des extraits, les prochaines sorties et l'histoire de CJajlk et CJajlk's Wife.">
-  <meta property="og:url" content="https://example.com/index.html">
-  <link rel="canonical" href="https://example.com/index.html">
+  <meta property="og:image" content="https://cjajlk.github.io/CJajlk-Music/assets/images/covers/ne-pars-pas.jpg">
+  <meta property="og:url" content="https://cjajlk.github.io/CJajlk-Music/index.html">
+  <link rel="canonical" href="https://cjajlk.github.io/CJajlk-Music/index.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="index-page">
@@ -28,13 +30,18 @@
 
   <main>
     <section class="hero">
-      <div class="hero-content container">
-        <p class="hero-tag">SITE OFFICIEL</p>
-        <h1>Deux voix. Deux vécus. Une même traversée.</h1>
-        <p class="hero-text">Un univers musical sombre et cinématographique, où chaque extrait révèle une émotion unique.</p>
-        <div class="hero-actions">
-          <a href="catalogue.html" class="btn btn-primary">Découvrir les titres</a>
-          <a href="https://www.youtube.com/@studiocj13" class="btn btn-secondary" target="_blank" rel="noreferrer">Écouter sur YouTube</a>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="hero-tag">SITE OFFICIEL</p>
+          <h1>Deux voix. Deux vécus. Une même traversée.</h1>
+          <p class="hero-text">Un univers musical sombre et cinématographique, où chaque extrait révèle une émotion unique.</p>
+          <div class="hero-actions">
+            <a href="catalogue.html" class="btn btn-primary">Découvrir les titres</a>
+            <a href="https://www.youtube.com/@studiocj13" class="btn btn-secondary" target="_blank" rel="noreferrer">Écouter sur YouTube</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/images/hero/fond.png" alt="Visuel artistique CJajlk Music avec mascottes" width="960" height="560" loading="eager" decoding="async">
         </div>
       </div>
     </section>
@@ -67,7 +74,10 @@
         <p class="section-pretitle">Prochaines sorties</p>
         <h2>À venir</h2>
       </div>
-      <div class="card-grid" id="comingSoonList"></div>
+      <div class="upcoming-grid coming-soon-grid card-grid" id="comingSoonList"></div>
+      <div class="upcoming-footer">
+        <a href="catalogue.html" class="btn btn-primary">Voir tous les titres</a>
+      </div>
     </section>
 
     <section class="about-preview container">
@@ -91,9 +101,9 @@
     <section class="reviews container">
       <div class="section-header">
         <p class="section-pretitle">Avis</p>
-        <h2>Retours de démonstration</h2>
+        <h2>Avis publiés</h2>
       </div>
-      <div class="reviews-grid" id="demoReviews"></div>
+      <div class="reviews-grid" id="publishedReviews"></div>
     </section>
   </main>
 
@@ -112,5 +122,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/reviews.js"></script>
 </body>
 </html>

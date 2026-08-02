@@ -1,5 +1,4 @@
 const SONGS_DATA_URL = 'data/songs.json';
-const REVIEWS_DATA_URL = 'data/reviews-demo.json';
 const FEATURED_SLUG = 'ne-pars-pas';
 
 function escapeHtml(value) {
@@ -82,18 +81,37 @@ function initIndex() {
       }
 
       const comingSoonList = document.getElementById('comingSoonList');
-      const soonTracks = songs.filter(song => song.status === 'coming-soon');
+      const soonTracks = songs.filter(song => song.status === 'coming-soon').slice(0, 3);
 
       if (soonTracks.length === 0) {
         comingSoonList.innerHTML = '<p>Aucun titre à venir pour le moment.</p>';
       } else {
-        comingSoonList.innerHTML = soonTracks.map(track => `
-          <article class="card">
-            <h3>${safeText(track.title)}</h3>
-            <p>${safeText(track.descriptionShort)}</p>
-            <p><strong>Statut :</strong> Bientôt disponible</p>
-          </article>
-        `).join('');
+        comingSoonList.innerHTML = soonTracks.map(track => {
+          const cover = track.cover && track.cover.trim();
+          const releaseDate = track.releaseDate ? `<span class="card-detail">${safeText(track.releaseDate)}</span>` : '';
+          const coverHtml = cover ? `
+            <div class="card-cover">
+              <img src="${safeText(cover)}" alt="Pochette de ${safeText(track.title)}" loading="lazy" decoding="async" onerror="this.closest('.card-cover').classList.add('cover-missing'); this.remove();">
+            </div>
+          ` : `
+            <div class="card-cover cover-missing">Pochette indisponible</div>
+          `;
+
+          return `
+            <article class="card coming-soon-card">
+              ${coverHtml}
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="badge coming-soon">Bientôt disponible</span>
+                  ${releaseDate}
+                </div>
+                <h3>${safeText(track.title)}</h3>
+                <p>${safeText(track.descriptionShort)}</p>
+                <a href="titres/${safeText(track.slug)}/" class="btn btn-tertiary">Voir la fiche</a>
+              </div>
+            </article>
+          `;
+        }).join('');
       }
     })
     .catch(() => {
@@ -101,16 +119,7 @@ function initIndex() {
       comingSoonList.innerHTML = '<p>Impossible de charger les titres pour le moment.</p>';
     });
 
-  fetchJson(REVIEWS_DATA_URL)
-    .then(reviews => {
-      const demoReviews = reviews.slice(0, 2);
-      const reviewsContainer = document.getElementById('demoReviews');
-      reviewsContainer.innerHTML = demoReviews.map(createReviewCard).join('');
-    })
-    .catch(() => {
-      const reviewsContainer = document.getElementById('demoReviews');
-      reviewsContainer.innerHTML = '<p>Impossible de charger les avis de démonstration.</p>';
-    });
+  // Reviews are loaded separately by assets/js/reviews.js
 }
 
 function initContact() {
@@ -122,17 +131,20 @@ function initContact() {
         .join('');
 
       const emailRequest = document.getElementById('emailRequest');
+      const reviewTrack = document.getElementById('reviewTrack');
+      const reviewNickname = document.getElementById('reviewNickname');
+      const reviewRating = document.getElementById('reviewRating');
+      const reviewComment = document.getElementById('reviewComment');
+      const sendReviewEmail = document.getElementById('sendReviewEmail');
+
+      reviewTrack.innerHTML += songs
+        .map(track => `<option value="${safeText(track.slug)}">${safeText(track.title)}</option>`)
+        .join('');
 
       function updateEmailButton() {
         const currentTrack = songs.find(song => song.slug === selectTrack.value);
-        if (!currentTrack) {
-          emailRequest.disabled = true;
-          emailRequest.classList.add('disabled');
-          return;
-        }
-
-        emailRequest.disabled = false;
-        emailRequest.classList.remove('disabled');
+        emailRequest.disabled = !currentTrack;
+        emailRequest.classList.toggle('disabled', !currentTrack);
       }
 
       selectTrack.addEventListener('change', updateEmailButton);
@@ -149,6 +161,25 @@ function initContact() {
         const mailto = `mailto:cjajlk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailto;
       });
+
+      if (sendReviewEmail) {
+        sendReviewEmail.addEventListener('click', () => {
+          const selectedTrack = songs.find(song => song.slug === reviewTrack.value);
+          if (!selectedTrack) {
+            alert('Veuillez sélectionner un titre pour votre avis.');
+            return;
+          }
+          if (!reviewNickname.value.trim() || !reviewRating.value || !reviewComment.value.trim()) {
+            alert('Merci de renseigner votre pseudonyme, votre note et votre commentaire.');
+            return;
+          }
+
+          const subject = `Avis à valider — ${selectedTrack.title}`;
+          const body = `Titre : ${selectedTrack.title}\r\nPseudonyme : ${reviewNickname.value.trim()}\r\nNote : ${reviewRating.value}/5\r\nCommentaire : ${reviewComment.value.trim()}\r\n\r\nVotre avis sera vérifié avant publication.`;
+          const mailto = `mailto:cjajlk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.location.href = mailto;
+        });
+      }
     })
     .catch(() => {
       const selectTrack = document.getElementById('selectTrack');

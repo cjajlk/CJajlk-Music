@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const ENCODING = 'utf8';
 const SITE_BASE_URL = process.env.SITE_BASE_URL || 'https://example.com';
 // À remplacer par le domaine officiel avant tout déploiement public.
 
@@ -92,12 +93,16 @@ ${jsonLd}
 </head>
 <body>
   <header class="site-header">
-    <nav class="site-nav">
-      <a href="../../index.html">Accueil</a>
-      <a href="../../catalogue.html">Catalogue</a>
-      <a href="../../about.html">À propos</a>
-      <a href="../../contact.html">Contact</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="../../index.html"><span class="brand-white">CJAJLK</span> <span class="brand-red">MUSIC</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="site-nav">
+        <a href="../../index.html">Accueil</a>
+        <a href="../../catalogue.html">Catalogue</a>
+        <a href="../../about.html">À propos</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
   <main class="track-page">
     <section class="track-hero">
@@ -158,7 +163,7 @@ function main() {
     process.exit(1);
   }
 
-  const rawData = fs.readFileSync(dataPath, 'utf-8');
+  const rawData = fs.readFileSync(dataPath, ENCODING);
   let tracks;
   const errors = [];
   let generated = 0;
@@ -194,7 +199,7 @@ function main() {
     }
 
     try {
-      fs.writeFileSync(filePath, renderPage(track), 'utf-8');
+      fs.writeFileSync(filePath, renderPage(track), ENCODING);
       generated += 1;
     } catch (error) {
       ignored += 1;

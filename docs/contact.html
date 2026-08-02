@@ -8,8 +8,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="CJajlk Music — Contact">
   <meta property="og:description" content="Contactez CJajlk Music pour un achat, un soutien ou une demande d'information. Mailto prérempli et lien Ko-fi.">
-  <meta property="og:url" content="https://example.com/contact.html">
-  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:image" content="https://cjajlk.github.io/CJajlk-Music/assets/images/covers/ne-pars-pas.jpg">
+  <meta property="og:url" content="https://cjajlk.github.io/CJajlk-Music/contact.html">
+  <link rel="canonical" href="https://cjajlk.github.io/CJajlk-Music/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="contact-page">
@@ -53,6 +55,33 @@
         <h2>Soutenir sur Ko-fi</h2>
         <p>Pour soutenir le projet, accéder aux versions complètes et encourager la création.</p>
         <a href="https://ko-fi.com/cjajlk" target="_blank" rel="noreferrer" class="btn btn-primary">Soutenir sur Ko-fi</a>
+      </article>
+
+      <article class="contact-card">
+        <h2>Laisser un avis</h2>
+        <p>Votre avis sera vérifié avant publication.</p>
+        <label for="reviewTrack">Titre</label>
+        <select id="reviewTrack" aria-label="Choisir un titre pour avis">
+          <option value="">Sélectionnez un titre</option>
+        </select>
+
+        <label for="reviewNickname">Pseudonyme</label>
+        <input id="reviewNickname" type="text" placeholder="Votre pseudonyme" required>
+
+        <label for="reviewRating">Note</label>
+        <select id="reviewRating" required>
+          <option value="">Sélectionnez une note</option>
+          <option value="5">5/5</option>
+          <option value="4">4/5</option>
+          <option value="3">3/5</option>
+          <option value="2">2/5</option>
+          <option value="1">1/5</option>
+        </select>
+
+        <label for="reviewComment">Commentaire</label>
+        <textarea id="reviewComment" rows="4" placeholder="Votre commentaire" required></textarea>
+
+        <button id="sendReviewEmail" type="button" class="btn btn-primary">Préparer l’e-mail</button>
       </article>
     </section>
   </main>
