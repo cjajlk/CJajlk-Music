@@ -349,8 +349,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/l-hotel.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/l-hotel-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -391,8 +391,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/l-eternite.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/l-eternite-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -531,8 +531,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/la-gentilesse.jpg",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/la-gentillesse-a-un-prix-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -629,8 +629,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/hors-critere.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/hors-critere-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -1024,8 +1024,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/juste-un-homme.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/juste-un-homme-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
