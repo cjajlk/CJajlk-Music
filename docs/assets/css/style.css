@@ -1125,3 +1125,108 @@ select:focus-visible {
     padding: 1.5rem;
   }
 }
+
+/* Purchase Info Section */
+.purchase-info {
+  padding: 3rem 0;
+}
+
+.purchase-card {
+  background: linear-gradient(135deg, rgba(108, 184, 255, 0.08) 0%, rgba(209, 31, 31, 0.05) 100%);
+  border: 1px solid rgba(108, 184, 255, 0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.purchase-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.purchase-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #f5f5f5;
+}
+
+.purchase-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.purchase-features li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #d5d5d5;
+}
+
+.checkmark {
+  color: #6cb8ff;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.purchase-price {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(108, 184, 255, 0.15);
+  border-bottom: 1px solid rgba(108, 184, 255, 0.15);
+}
+
+.price-label {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.price-amount {
+  margin: 0.5rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #6cb8ff;
+}
+
+.purchase-description {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #c5c5c5;
+  line-height: 1.7;
+}
+
+.purchase-description p {
+  margin: 0.75rem 0;
+}
+
+.purchase-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .purchase-card {
+    padding: 2rem;
+  }
+
+  .purchase-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .price-amount {
+    font-size: 1.5rem;
+  }
+
+  .purchase-description {
+    font-size: 0.85rem;
+  }
+}
