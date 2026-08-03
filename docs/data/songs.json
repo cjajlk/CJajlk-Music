@@ -32,7 +32,7 @@
       "version complète sur Ko-fi"
     ],
     "cover": "assets/images/covers/petit-a-petit.jpg",
-    "audioPreview": "assets/audio/previews/petit-a-petit-preview.mp4",
+    "audioPreview": "assets/audio/previews/petit-a-petit-preview.mp3",
     "previewDuration": 45,
     "platforms": {
       "youtube": null,
@@ -84,7 +84,7 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/dans-ma-tete-ca-brule.png",
-    "audioPreview": "assets/audio/previews/dans-ma-tete-ca-brule-preview.mp4",
+    "audioPreview": "assets/audio/previews/dans-ma-tete-ca-brule-preview.mp3",
     "previewDuration": 45,
     "platforms": {
       "youtube": null,
@@ -130,7 +130,7 @@
       "version complète sur Ko-fi"
     ],
     "cover": "assets/images/covers/le-silence-dans-ma-tete.jpg",
-    "audioPreview": "assets/audio/previews/le-silence-dans-ma-tete-preview.mp4",
+    "audioPreview": "assets/audio/previews/le-silence-dans-ma-tete-preview.mp3",
     "previewDuration": null,
     "platforms": {
       "youtube": null,
@@ -179,7 +179,7 @@
       "demande de version complète"
     ],
     "cover": "assets/images/covers/ne-pars-pas.jpg",
-    "audioPreview": "assets/audio/previews/ne-pars-pas-preview.mp4",
+    "audioPreview": "assets/audio/previews/ne-pars-pas-preview.mp3",
     "previewDuration": 45,
     "platforms": {
       "youtube": null,
@@ -224,7 +224,7 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/notre-famille.jpg",
-    "audioPreview": "assets/audio/previews/notre-famille-preview.mp4",
+    "audioPreview": "assets/audio/previews/notre-famille-preview.mp3",
     "previewDuration": null,
     "platforms": {
       "youtube": null,
@@ -982,7 +982,7 @@
       "extrait audio 45s"
     ],
     "cover": "assets/images/covers/mon-esprit-ma-folie.png",
-    "audioPreview": "assets/audio/previews/mon-esprit-ma-folie-preview.wav",
+    "audioPreview": "assets/audio/previews/mon-esprit-ma-folie-preview.mp3",
     "previewDuration": 45,
     "platforms": {
       "youtube": null,
