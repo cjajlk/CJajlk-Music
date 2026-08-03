@@ -56,6 +56,27 @@ function fetchJson(url) {
   });
 }
 
+function initPurchaseToggle() {
+  const toggle = document.getElementById('purchaseToggle');
+  const explanation = document.getElementById('purchaseExplanation');
+
+  if (!toggle || !explanation) {
+    return;
+  }
+
+  toggle.addEventListener('click', () => {
+    const isOpen = explanation.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+  });
+
+  toggle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle.click();
+    }
+  });
+}
+
 function initIndex() {
   fetchJson(SONGS_DATA_URL)
     .then(songs => {
@@ -203,6 +224,7 @@ function initNavigation() {
 
 function initPage() {
   initNavigation();
+  initPurchaseToggle();
   if (document.body.classList.contains('index-page') && document.getElementById('playFeatured')) {
     initIndex();
   }

@@ -1211,6 +1211,75 @@ select:focus-visible {
   margin: 0;
 }
 
+.purchase-toggle {
+  background: transparent;
+  border: 1px solid rgba(108, 184, 255, 0.3);
+  color: #6cb8ff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+  margin: 1.5rem 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.purchase-toggle:hover,
+.purchase-toggle:focus-visible {
+  background: rgba(108, 184, 255, 0.1);
+  border-color: rgba(108, 184, 255, 0.6);
+  outline: none;
+}
+
+.purchase-explanation {
+  background: rgba(108, 184, 255, 0.06);
+  border-left: 3px solid #6cb8ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #d5d5d5;
+  line-height: 1.6;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.purchase-explanation.hidden {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1rem;
+  margin-bottom: 0;
+  border-left-width: 0;
+}
+
+.purchase-explanation p {
+  margin: 0;
+}
+
+.purchase-security {
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #8fb8ff;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.purchase-security p {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .purchase-description {
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -1241,5 +1310,19 @@ select:focus-visible {
 
   .purchase-description {
     font-size: 0.85rem;
+  }
+
+  .purchase-toggle {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.9rem;
+  }
+
+  .purchase-explanation {
+    font-size: 0.85rem;
+    padding: 0.9rem;
+  }
+
+  .purchase-security {
+    font-size: 0.8rem;
   }
 }
