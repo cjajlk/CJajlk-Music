@@ -433,8 +433,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/le-parcours.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/le-parcours-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -678,8 +678,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/ma-confession.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/ma-confession-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -780,8 +780,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/la-route.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/la-route-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -885,8 +885,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/la-mort.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/la-mort-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -937,8 +937,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/le-cimetiere.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/le-cimetiere-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
