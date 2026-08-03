@@ -265,8 +265,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/pour-te-liberer.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/pour-te-liberer-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -307,8 +307,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/plus-fort-que-tout.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/plus-fort-que-tout-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -482,8 +482,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/predateurs.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/predateurs-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -580,8 +580,8 @@
       "extrait audio 30-45s"
     ],
     "cover": "assets/images/covers/11-ans.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/11-ans-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -728,8 +728,8 @@
       "version complète sur Ko-fi"
     ],
     "cover": "assets/images/covers/fin-mai.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/fin-mai-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
@@ -833,8 +833,8 @@
       "version complète sur Ko-fi"
     ],
     "cover": "assets/images/covers/sensualite.png",
-    "audioPreview": null,
-    "previewDuration": null,
+    "audioPreview": "assets/audio/previews/sensualite-preview.mp3",
+    "previewDuration": 45,
     "platforms": {
       "youtube": null,
       "youtubeMusic": null,
