@@ -1,60 +1,23 @@
-# CJajlk Music 🎵
+# CJajlk Music
 
-Un site web moderne et élégant pour découvrir la musique de CJajlk. Design sombre, responsif et optimisé pour tous les appareils.
+## Version officielle
 
-## 🌟 Caractéristiques
+La version officielle actuelle du site est la V2 situee dans le dossier [docs](docs).
 
-- **Design épuré** : Interface sombre et élégante
-- **Responsive** : Optimisé pour mobile, tablette et desktop
-- **Extraits musicaux** : Écoutez les extraits des morceaux disponibles
-- **Statut des titres** :
-  - ✅ Disponible sur Ko-fi : "Ne pars pas" et "Petit à petit"
-  - ⏱ Bientôt disponible : "Dans ma tête ça brûle" et "Notre famille"
-- **Soutien** : Lien Ko-fi pour soutenir l'artiste
-- **Réseaux sociaux** : Liens vers TikTok et YouTube
+GitHub Pages publie depuis la branche main en utilisant le dossier docs.
 
-## 📁 Structure du projet
+## Regles de travail
 
-```
-CJajlk Music/
-├── index.html          # Page principale
-├── style.css           # Styles CSS
-├── script.js           # Scripts JavaScript
-├── assets/
-│   ├── images/         # Images des morceaux
-│   ├── music/          # Extraits musicaux
-│   └── icons/
-└── pages/              # Pages supplémentaires
-```
+- Ne pas travailler sur une ancienne version racine.
+- Toute evolution du site public doit cibler le contenu de [docs](docs).
+- Ne pas modifier la configuration GitHub Pages sans validation explicite.
 
-## 🎨 Palette de couleurs
+## Structure utile du depot
 
-- **Principal** : #8b0000 (rouge foncé)
-- **Accent** : #b91c1c (rouge vif)
-- **Fond** : #050505 (noir profond)
-- **Texte** : Blanc et gris
+- [docs](docs) : site V2 publie (pages, assets, donnees, titres).
+- [tools](tools) : utilitaires conserves pour generation/developpement futur.
+- [.gitignore](.gitignore) : regles d'ignore git.
 
-## 📱 Optimisation mobile
+## Licence
 
-- Meta viewport configuré
-- Media queries pour 768px et 1024px
-- Interface adaptée à tous les écrans
-- Navigation mobile-friendly
-
-## 🔗 Liens utiles
-
-- [Ko-fi](https://ko-fi.com/cjajlk)
-- [TikTok](https://www.tiktok.com/@cjajlk94)
-- [YouTube](https://www.youtube.com/@studiocj13)
-- [CJajlkGames](https://cjajlk.github.io/cjajlkGames/)
-
-## 📝 Notes
-
-- Les extraits sont limités à 60 secondes
-- Le téléchargement des extraits est désactivé
-- Une seule piste peut jouer à la fois
-- Notification après 60 secondes de lecture
-
-## 📄 Licence
-
-© 2026 CJajlk Music - Tous droits réservés
+© 2026 CJajlk Music - Tous droits reserves
